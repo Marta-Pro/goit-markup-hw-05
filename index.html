@@ -28,7 +28,7 @@
           </a>
           <ul class="site-nav list">
             <li class="item">
-              <a href="./index.html" class="anchors link">Studio</a>
+              <a href="./index.html" class="anchors link nav-a">Studio</a>
             </li>
 
             <li>
@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn btn-hero">Order Service</button>
+          <button type="button" class="btn btn-hero custom-transition" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Hero -->
@@ -153,7 +153,7 @@
                 <h3 class="team-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
                  <ul class="actions">
-                <li><a href="" class="a-act">
+                <li class="custom-transition"><a href="" class="a-act custom-transition">
 <svg class="a-icon">
   <use href="./images/symbol-defs.svg#instagram"></use>
 </svg>
@@ -277,7 +277,7 @@
             <div class="container">
                 <h2 class="section-title">Customers</h2>
                 <ul class="customer-list">
-                    <li class="customer-item"><a href="" class="customer-link"><svg width="104" height="56">
+                    <li class="customer-item custom-transition"><a href="" class="customer-link"><svg  width="104" height="56">
                                 <use href="./images/clients_symbol-defs.svg#client1" ></use>
                             </svg></a></li>
                     <li class="customer-item"><a href="" class="customer-link"><svg width="104" height="56">
@@ -344,6 +344,21 @@
 </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close> <svg class="close-icon" >
+  <use href="./images/close-black.svg#close-btn"></use>
+</svg>
+</button>
+      </div>
+    </div>
+
+    <body>
+  <!-- Вся твоя розмітка, включно з розміткою модалки -->
+
+  <!-- Ставимо перед закриваючим тегом body -->
+  <script src="./js/modal.js"></script>
+</body>
   </body>
 </html>
 
